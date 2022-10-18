@@ -41,12 +41,7 @@ public class HomeController {
 	{
 		return serviceInterface.deleteEmployee(eid);
 	}
-	//Delete By id Employee
-	@DeleteMapping(value = "/employee/{eid}", consumes = "application/JSON")
-	public String deleteEmployee(@PathVariable ("eid") Integer eid)
-	{
-		return serviceInterface.deleteEmployee(eid);
-	}
+	
 	
 	@GetMapping(value = "/employee", produces = "application/JSON")
 	public List<Employee> getAllEmployee()
