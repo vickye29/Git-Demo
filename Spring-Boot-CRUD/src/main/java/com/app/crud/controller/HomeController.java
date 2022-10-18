@@ -32,6 +32,7 @@ public class HomeController {
 	@PutMapping(value = "/employee/{eid}", consumes = "application/JSON" )
 	public String editEmployee(@RequestBody Employee employee, @PathVariable ("eid") Integer eid)
 	{
+		System.out.println("Data Updated");
 		return serviceInterface.editEmployee(eid,employee);
 	}
 	
