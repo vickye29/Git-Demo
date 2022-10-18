@@ -24,6 +24,7 @@ public class HomeController {
 	@PostMapping(value = "/employee", consumes = "application/JSON" )
 	public Employee saveEmployee(@RequestBody Employee employee)
 	{
+		System.out.println("For Git Practice");
 		return serviceInterface.saveEmployee(employee);
 	}
 	// GIt Practice 
