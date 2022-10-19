@@ -52,6 +52,7 @@ public class HomeController {
 	@GetMapping(value = "/employee/{eid}",consumes = "application/JSON", produces = "application/JSON")
 	public Employee getAllEmployee( @PathVariable ("eid") Integer eid)
 	{
+		System.out.println("Data Retrive ");
 		return serviceInterface.getSingleEmployee(eid);
 	}
 	
