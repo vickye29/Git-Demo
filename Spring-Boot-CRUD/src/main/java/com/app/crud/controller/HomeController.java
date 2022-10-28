@@ -40,6 +40,7 @@ public class HomeController {
 	@DeleteMapping(value = "/employee/{eid}", consumes = "application/JSON")
 	public String deleteEmployee(@PathVariable ("eid") Integer eid)
 	{
+		System.out.println("Data Deleted");
 		return serviceInterface.deleteEmployee(eid);
 	}
 	
