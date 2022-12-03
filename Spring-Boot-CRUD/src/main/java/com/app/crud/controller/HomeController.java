@@ -29,11 +29,11 @@ public class HomeController {
 		// Changes by Master
 	}
 	// GIt Practice 
-<<<<<<< HEAD
+
 	//Again this is git hub tutorial
-=======
+
 	// new text added by vivek on 3rd dec
->>>>>>> c68539bce8bcc16f6f1205cb163dc2e675664709
+
 	
 	@PutMapping(value = "/employee/{eid}", consumes = "application/JSON" )
 	public String editEmployee(@RequestBody Employee employee, @PathVariable ("eid") Integer eid)
